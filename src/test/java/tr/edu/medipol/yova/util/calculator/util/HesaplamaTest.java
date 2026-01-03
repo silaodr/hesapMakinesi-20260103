@@ -67,6 +67,19 @@ class HesaplamaTest {
 		//THEN - Kontroller
 		assertEquals(999999, sonuc);
 	}
+	
+	@Test
+	void testBol_sifirin_bolunmesi() {
+		//GIVEN - ÖN koşul
+		int sayi1 = 0;
+		int sayi2 = 1;
+		
+		//WHEN - test edilecek metodun çağırılması
+		int sonuc = Hesaplama.bol(sayi1, sayi2);
+		
+		//THEN - Kontroller
+		assertEquals(1, sonuc);
+	}
 
 
 }
